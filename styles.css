@@ -1,1 +1,14 @@
 /*  your css code here. If applicable */
+ body {
+        font-family: Arial, sans-serif;
+    }
+#checkbox{
+	cursor:pointer
+}
+    form {
+        max-width:300px;
+        margin: 0 auto;
+    }
+    input, label {
+        margin-bottom: 10px;
+    }
