@@ -1,9 +1,9 @@
-  document.getElementById('login-form').addEventListener('submit', function(event) {
+  document.getElementById('submit').addEventListener('click', function(event) {
         event.preventDefault();
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const rememberMe = document.getElementById('checkbox').checked;
-	    const btn = document.getElementById('submit');
+	    // const btn = document.getElementById('submit');
 
         if (rememberMe) {
             localStorage.setItem('username', username);
