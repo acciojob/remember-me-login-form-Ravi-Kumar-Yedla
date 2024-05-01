@@ -22,7 +22,7 @@
             existingButton.addEventListener('click', function() {
                 alert(`Logged in as ${localStorage.getItem('username')}`);
             });
-            // document.body.appendChild(existingButton);
+            document.body.appendChild(existingButton);
         }
     });
 
