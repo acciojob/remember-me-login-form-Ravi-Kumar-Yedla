@@ -11,10 +11,10 @@
         } else {
             localStorage.removeItem('username');
             localStorage.removeItem('password');
-        
+		}
 
         alert(`Logged in as ${username}`);
-		}
+		
         if (localStorage.getItem('username') && localStorage.getItem('password')) {
             const existingButton = document.createElement('button');
             existingButton.textContent = 'Login as existing user';
@@ -22,7 +22,7 @@
             existingButton.addEventListener('click', function() {
                 alert(`Logged in as ${localStorage.getItem('username')}`);
             });
-            document.body.appendChild(existingButton);
+            // document.body.appendChild(existingButton);
         }
     });
 
