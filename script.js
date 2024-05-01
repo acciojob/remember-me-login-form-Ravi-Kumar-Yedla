@@ -3,7 +3,7 @@
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const rememberMe = document.getElementById('checkbox').checked;
-	    // const btn = document.getElementById('submit');
+	    
 
         if (rememberMe) {
             localStorage.setItem('username', username);
@@ -11,10 +11,10 @@
         } else {
             localStorage.removeItem('username');
             localStorage.removeItem('password');
-        }
+        
 
         alert(`Logged in as ${username}`);
-
+		}
         if (localStorage.getItem('username') && localStorage.getItem('password')) {
             const existingButton = document.createElement('button');
             existingButton.textContent = 'Login as existing user';
